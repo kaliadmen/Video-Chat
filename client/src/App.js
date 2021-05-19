@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         width: '600px',
         border: '2px solid black',
-        
+
+        [theme.breakpoints.down('xs')]: {
+            width: '90%',
+        },
     },
     wrapper: {
         display: 'flex',
